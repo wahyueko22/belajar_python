@@ -3,13 +3,15 @@ import warnings
 
 _logger = logging.getLogger(__name__)
 
+""" it is custom exception """
 class BusinessException(Exception):
-    """ it is custom exception """
 
+    """ 
+    it is constructor of custom exception 
+     :param code: code of message exception
+    :param message: exception message and frontend modal content
+    """
     def __init__(self, code, message):
-        """
-        :param message: exception message and frontend modal content
-        """
         super().__init__(message)
         self.code = code
         self.message = message
