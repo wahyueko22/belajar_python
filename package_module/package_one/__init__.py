@@ -1,1 +1,1 @@
-from . import file_one
+from package_one.file_one import print_file_one

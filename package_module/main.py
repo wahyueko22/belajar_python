@@ -1,17 +1,10 @@
 import os
 
-import module
-from package_two import file_one
-from package_one import file_one
-from string import  cumi
-import string
+import package_two  
+
 
 def main():
-    print(os.get_exec_path)
-    module.print_hello()
-    file_one.print_file_one()
-   # print(cumi.oke())
-    print(string.digits)
+    package_two.print_file_one()
     
 
 if __name__ == "__main__":
